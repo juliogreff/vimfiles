@@ -57,6 +57,9 @@ nnoremap ; :
 " strips trailing whitespaces
 nnoremap <leader>W :%s/\s\+$//<cr>:let @/=''<cr>
 
+" convert tabs to spaces
+nnoremap <leader>T :%s/\t/    /g<cr>:let @/=''<cr>
+
 syntax enable
 colorscheme ir_black
 set background=dark
