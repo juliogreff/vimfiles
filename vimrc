@@ -8,7 +8,7 @@ if has("gui_macvim")       " macvim specific stuff
 endif
 
 if has("gui_running")    " gui specific stuff. includes macvim and gvim
-    set guioptions=egmrt " removes toolbars
+    set guioptions=egrt " removes toolbars
     set colorcolumn=80   " no code after 80 columns!
 endif
 
