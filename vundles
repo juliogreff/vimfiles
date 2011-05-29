@@ -1,4 +1,5 @@
 Bundle 'altercation/vim-colors-solarized'
+Bundle 'mileszs/ack.vim'
 Bundle 'msanders/snipmate.vim'
 Bundle 'scrooloose/nerdcommenter'
 Bundle 'scrooloose/nerdtree'
