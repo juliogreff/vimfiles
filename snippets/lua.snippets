@@ -1,0 +1,39 @@
+snippet f
+	function(${1:args})
+		${2:-- code}
+	end
+snippet func
+	function ${1:Object:}${2:name}(${3:args})
+		${4:-- code}
+	end
+snippet if
+	if ${1:true} then
+		${2:-- code}
+	end
+snippet for
+	for ${1:key}, ${2:value} in pairs(${3:table}) do
+		${4:-- code}
+	end
+snippet fori
+	for ${1:key}, ${2:value} in ipairs(${3:table}) do
+		${4:-- code}
+	end
+snippet forn
+	for ${1:var}=${2:start}, ${3:end}${4:, step} do
+		${5:-- code}
+	end
+snippet while
+	while ${1:exp} do
+		${2:-- code}
+	end
+snippet repeat
+	repeat
+		${2:-- code}
+	until ${1:-- exp}
+snippet class
+	${1:ClassName} = {}
+	function $1:new()
+		local o = {}
+		setmetatable(o, {__index = $1})
+		return o
+	end
