@@ -4,12 +4,12 @@ source ~/.vim/vundlerc " initializes vundle
 source ~/.vim/vundles  " load bundles
 
 if has("gui_macvim")       " macvim specific stuff
-    set guioptions=egmrt   " removes toolbar
     set guifont=Monaco:h12 " set font
 endif
 
-if has("gui_running")
-    set colorcolumn=80 " no code after 80 columns!
+if has("gui_running")    " gui specific stuff. includes macvim and gvim
+    set guioptions=egrt " removes toolbars
+    set colorcolumn=80   " no code after 80 columns!
 endif
 
 set nocompatible
