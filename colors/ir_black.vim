@@ -196,6 +196,7 @@ hi link xmlEndTag       Identifier
 hi link htmlTag         Keyword 
 hi link htmlTagName     Conditional 
 hi link htmlEndTag      Identifier 
+hi link htmlLink        Normal
 
 
 " Special for Javascript

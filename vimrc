@@ -8,7 +8,7 @@ if has("gui_macvim")       " macvim specific stuff
 endif
 
 if has("gui_running")    " gui specific stuff. includes macvim and gvim
-    set guioptions=egrt " removes toolbars
+    set guioptions=egrt  " removes toolbars
     set colorcolumn=80   " no code after 80 columns!
 endif
 
@@ -94,3 +94,15 @@ autocmd Filetype yaml setlocal sw=2
 
 nnoremap <silent> <F2> :NERDTreeToggle<cr>
 inoremap <silent> <F2> <esc>:NERDTreeToggle<cr>
+
+nnoremap <silent> <F1> :Errors<cr>
+inoremap <silent> <F1> <esc>:Errors<cr>
+
+let g:user_zen_settings = {
+\  'indentation' : '    '
+\}
+
+set statusline+=%#warningmsg#
+set statusline+=%{SyntasticStatuslineFlag()}
+set statusline+=%*
+let g:syntastic_enable_signs=1

@@ -11,6 +11,5 @@ Bundle 'tpope/vim-rails'
 Bundle 'tpope/vim-surround'
 Bundle 'vim-ruby/vim-ruby'
 
-Bundle 'AutoClose'
 Bundle 'matchit.zip'
 Bundle 'YankRing.vim'
