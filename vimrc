@@ -92,6 +92,8 @@ autocmd Filetype yaml setlocal sw=2
 autocmd Filetype yaml setlocal sts=2
 autocmd Filetype yaml setlocal sw=2
 
+autocmd BufNewFile,BufRead *.ejs setf html
+
 nnoremap <silent> <F2> :NERDTreeToggle<cr>
 inoremap <silent> <F2> <esc>:NERDTreeToggle<cr>
 
@@ -106,3 +108,5 @@ set statusline+=%#warningmsg#
 set statusline+=%{SyntasticStatuslineFlag()}
 set statusline+=%*
 let g:syntastic_enable_signs=1
+
+let g:syntastic_disabled_filetypes=['html']
