@@ -37,6 +37,8 @@ set foldmethod=marker
 set list
 set listchars=tab:▸\ ,eol:¬
 
+set statusline=%<%f\ %h%m%r%=%-14.(%l,%c%V%)\ %P
+
 " \v handles regexes like perl
 nnoremap / /\v
 vnoremap / /\v
@@ -104,9 +106,6 @@ let g:user_zen_settings = {
 \  'indentation' : '    '
 \}
 
-set statusline+=%#warningmsg#
-set statusline+=%{SyntasticStatuslineFlag()}
-set statusline+=%*
 let g:syntastic_enable_signs=1
 
 let g:syntastic_disabled_filetypes=['html']
