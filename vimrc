@@ -9,10 +9,9 @@ endif
 
 if has("gui_running")    " gui specific stuff. includes macvim and gvim
     set guioptions=egrt  " removes toolbars
-    set colorcolumn=80   " no code after 80 columns!
 endif
 
-set nocompatible
+set colorcolumn=80   " no code after 80 columns!
 set modelines=0
 
 set softtabstop=4
@@ -85,14 +84,13 @@ set writebackup
 
 " Sets 2-spaces indentation for Ruby
 autocmd Filetype ruby setlocal ts=2
-autocmd Filetype ruby setlocal ts=2
 autocmd Filetype ruby setlocal sts=2
+autocmd Filetype ruby setlocal sw=2
 
 " Sets 2-spaces indentation for YAML
 autocmd BufNewFile,BufRead *.yaml,*.yml setf yaml
 autocmd Filetype yaml setlocal sw=2
 autocmd Filetype yaml setlocal sts=2
-autocmd Filetype yaml setlocal sw=2
 
 autocmd BufNewFile,BufRead *.ejs setf html
 
