@@ -92,6 +92,8 @@ autocmd BufNewFile,BufRead *.yaml,*.yml setf yaml
 autocmd Filetype yaml setlocal sw=2
 autocmd Filetype yaml setlocal sts=2
 
+autocmd BufNewFile,BufRead *.clj setf clojure
+
 autocmd BufNewFile,BufRead *.ejs setf html
 
 nnoremap <silent> <F2> :NERDTreeToggle<cr>
