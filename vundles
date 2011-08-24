@@ -13,3 +13,4 @@ Bundle 'vim-ruby/vim-ruby'
 
 Bundle 'matchit.zip'
 Bundle 'YankRing.vim'
+Bundle 'VimClojure'
