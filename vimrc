@@ -111,3 +111,7 @@ let g:syntastic_enable_signs=1
 let g:syntastic_disabled_filetypes=['html']
 
 set mouse=a
+
+" keep buffer
+set viminfo='10,\"30,:20,%,n~/.viminfo
+au BufReadPost * if line("'\"")|execute("normal `\"")|endif
