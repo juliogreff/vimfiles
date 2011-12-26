@@ -115,3 +115,13 @@ set mouse=a
 " keep buffer
 set viminfo='10,\"30,:20,%,n~/.viminfo
 au BufReadPost * if line("'\"")|execute("normal `\"")|endif
+
+" folds
+inoremap <F9> <C-O>za
+nnoremap <F9> za
+onoremap <F9> <C-C>za
+vnoremap <F9> zf
+
+" tabs
+nnoremap <F11> :tabp<cr>
+nnoremap <F12> :tabn<cr>
