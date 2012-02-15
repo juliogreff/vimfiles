@@ -96,6 +96,10 @@ autocmd BufNewFile,BufRead *.clj setf clojure
 
 autocmd BufNewFile,BufRead *.ejs setf html
 
+autocmd Filetype javascript setlocal ts=2
+autocmd Filetype javascript setlocal sts=2
+autocmd Filetype javascript setlocal sw=2
+
 nnoremap <silent> <F2> :NERDTreeToggle<cr>
 inoremap <silent> <F2> <esc>:NERDTreeToggle<cr>
 
@@ -125,3 +129,18 @@ vnoremap <F9> zf
 " tabs
 nnoremap <F11> :tabp<cr>
 nnoremap <F12> :tabn<cr>
+
+" get yankring out of the way of ctrlp
+let g:yankring_replace_n_pkey = '<Char-172>'
+let g:yankring_replace_n_nkey = '<Char-174>'
+
+set wildignore+=.git\*,.hg\*,.svn\*
+
+inoremap  <Up>     <NOP>
+inoremap  <Down>   <NOP>
+inoremap  <Left>   <NOP>
+inoremap  <Right>  <NOP>
+noremap   <Up>     <NOP>
+noremap   <Down>   <NOP>
+noremap   <Left>   <NOP>
+noremap   <Right>  <NOP>
