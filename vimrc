@@ -100,6 +100,8 @@ autocmd Filetype javascript setlocal ts=2
 autocmd Filetype javascript setlocal sts=2
 autocmd Filetype javascript setlocal sw=2
 
+autocmd Filetype php setlocal noexpandtab
+
 nnoremap <silent> <F2> :NERDTreeToggle<cr>
 inoremap <silent> <F2> <esc>:NERDTreeToggle<cr>
 
