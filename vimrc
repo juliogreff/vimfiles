@@ -28,7 +28,7 @@ set encoding=utf-8
 set ttyfast
 
 set wildmenu
-set wildmode=list:longest
+set wildmode=list:full
 
 set ruler
 set number
