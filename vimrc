@@ -53,8 +53,6 @@ nnoremap <cr> :noh<cr>
 nnoremap <tab> %
 vnoremap <tab> %
 
-nnoremap ; :
-
 " strips trailing whitespaces
 nnoremap <leader>W :%s/\s\+$//<cr>:let @/=''<cr>
 
@@ -65,20 +63,14 @@ syntax enable
 colorscheme ir_black
 set background=dark
 
-" remaps YankRing to <F3>
-nnoremap <silent> <F3> :YRShow<cr>
-inoremap <silent> <F3> <esc>:YRShow<cr>
-
-let g:yankring_history_dir = '~/.vim/tmp'
-
 " Command-Option-(Left/Right) to switch tabs
 nnoremap <M-D-Left> :tabp<cr>
 nnoremap <M-D-Right> :tabn<cr>
 inoremap <M-D-Left> <esc>:tabp<cr>
 inoremap <M-D-Right> <esc>:tabn<cr>
 
-set backup 
-set backupdir=~/.vim/tmp 
+set backup
+set backupdir=~/.vim/tmp
 set directory=~/.vim/tmp
 set writebackup
 
@@ -93,6 +85,8 @@ autocmd Filetype yaml setlocal sw=2
 autocmd Filetype yaml setlocal sts=2
 
 autocmd BufNewFile,BufRead *.clj setf clojure
+
+autocmd BufNewFile,BufRead *.go setf go
 
 autocmd BufNewFile,BufRead *.ejs setf html
 
@@ -122,19 +116,11 @@ set mouse=a
 set viminfo='10,\"30,:20,%,n~/.viminfo
 au BufReadPost * if line("'\"")|execute("normal `\"")|endif
 
-" folds
-inoremap <F9> <C-O>za
-nnoremap <F9> za
-onoremap <F9> <C-C>za
-vnoremap <F9> zf
+set pastetoggle=<F4>
 
 " tabs
 nnoremap <F11> :tabp<cr>
 nnoremap <F12> :tabn<cr>
-
-" get yankring out of the way of ctrlp
-let g:yankring_replace_n_pkey = '<Char-172>'
-let g:yankring_replace_n_nkey = '<Char-174>'
 
 set wildignore+=.git\*,.hg\*,.svn\*
 
@@ -146,3 +132,6 @@ noremap   <Up>     <NOP>
 noremap   <Down>   <NOP>
 noremap   <Left>   <NOP>
 noremap   <Right>  <NOP>
+
+" Unfuck my screen
+nnoremap U :syntax sync fromstart<cr>:redraw!<cr>
