@@ -90,6 +90,9 @@ autocmd BufNewFile,BufRead *.go setf go
 
 autocmd BufNewFile,BufRead *.ejs setf html
 
+autocmd BufNewFile,BufRead *.slim setf slim
+autocmd BufNewFile,BufRead *.md setf markdown
+
 autocmd Filetype javascript setlocal ts=2
 autocmd Filetype javascript setlocal sts=2
 autocmd Filetype javascript setlocal sw=2
@@ -135,3 +138,6 @@ noremap   <Right>  <NOP>
 
 " Unfuck my screen
 nnoremap U :syntax sync fromstart<cr>:redraw!<cr>
+
+cmap w!! w !sudo tee % >/dev/null
+set clipboard=unnamed
