@@ -10,3 +10,6 @@ Bundle 'bbommarito/vim-slim'
 Bundle 'matchit.zip'
 Bundle 'VimClojure'
 Bundle 'JavaScript-Indent'
+
+Bundle 'tomasr/molokai'
+Bundle 'nelstrom/vim-mac-classic-theme'

@@ -28,6 +28,9 @@ set wildignore+=.git\*,.hg\*,.svn\*,*.sql
 set wildmenu
 set wildmode=list:full
 
+" force terminal colors
+set t_Co=256
+
 if has("gui_macvim")
     set guifont=Monaco:h12
 endif
