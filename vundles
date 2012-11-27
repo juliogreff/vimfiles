@@ -6,6 +6,7 @@ Bundle 'vim-ruby/vim-ruby'
 Bundle 'kien/ctrlp.vim'
 Bundle 'jnwhiteh/vim-golang'
 Bundle 'bbommarito/vim-slim'
+Bundle 'tpope/vim-surround'
 
 Bundle 'matchit.zip'
 Bundle 'VimClojure'
