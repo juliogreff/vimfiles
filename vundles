@@ -1,12 +1,12 @@
 Bundle 'cakebaker/scss-syntax.vim'
 Bundle 'scrooloose/nerdcommenter'
-Bundle 'scrooloose/syntastic'
 Bundle 'tpope/vim-endwise'
 Bundle 'vim-ruby/vim-ruby'
 Bundle 'kien/ctrlp.vim'
 Bundle 'jnwhiteh/vim-golang'
 Bundle 'bbommarito/vim-slim'
 Bundle 'tpope/vim-surround'
+Bundle 'othree/html5.vim'
 
 Bundle 'matchit.zip'
 Bundle 'VimClojure'
