@@ -59,6 +59,7 @@ autocmd BufNewFile,BufRead *.go setf go
 autocmd BufNewFile,BufRead *.ejs setf html
 autocmd BufNewFile,BufRead *.slim setf slim
 autocmd BufNewFile,BufRead *.md setf markdown
+autocmd BufNewFile,BufRead *.json setf javascript
 autocmd BufNewFile,BufRead Gemfile,Thorfile,Capfile setf ruby
 
 
