@@ -14,17 +14,21 @@ set hlsearch
 set ignorecase
 set incsearch
 set laststatus=2
+set lazyredraw
 set list
 set listchars=tab:▸\ ,eol:¬
+set magic
 set nowrap
+set number
 set pastetoggle=<F4>
 set relativenumber
 set ruler
 set scrolloff=5
 set showmatch
 set smartcase
+set splitright
 set ttyfast
-set wildignore+=.git\*,.hg\*,.svn\*,*.sql
+set wildignore+=.git
 set wildmenu
 set wildmode=list:full
 
@@ -59,8 +63,9 @@ autocmd BufNewFile,BufRead *.go setf go
 autocmd BufNewFile,BufRead *.ejs setf html
 autocmd BufNewFile,BufRead *.slim setf slim
 autocmd BufNewFile,BufRead *.md setf markdown
-autocmd BufNewFile,BufRead *.json setf javascript
+autocmd BufNewFile,BufRead *.json setf markdown
 autocmd BufNewFile,BufRead Gemfile,Thorfile,Capfile setf ruby
+autocmd BufNewFile,BufRead *.blade.php setf blade
 
 
 " keeps information between sessions
