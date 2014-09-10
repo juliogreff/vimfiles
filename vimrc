@@ -117,6 +117,9 @@ noremap <Down> <NOP>
 noremap <Left> <NOP>
 noremap <Right> <NOP>
 
+inoremap jk <ESC>
+vnoremap jk <ESC>
+
 " redraws screen.
 nnoremap U :syntax sync fromstart<cr>:redraw!<cr>
 
