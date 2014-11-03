@@ -85,6 +85,7 @@ au BufReadPost * if line("'\"")|execute("normal `\"")|endif
 vnoremap S :sort<cr>
 nmap <tab> %
 vmap <tab> %
+nmap <C-e> :e#<CR>
 
 " very magic search regex
 nnoremap / /\v
@@ -92,10 +93,6 @@ vnoremap / /\v
 
 " clears last search's highlight
 nnoremap <silent> <cr> :nohlsearch<cr>
-
-" opens syntastic location list
-nnoremap <F1> :Errors<cr>
-inoremap <F1> <esc>:Errors<cr>
 
 " strips trailing whitespaces
 nnoremap <leader>W :%s/\s\+$//<cr>:let @/=''<cr>
